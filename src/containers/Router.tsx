@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 
 import { Layout } from '../components/Layout/Layout'
+import {Order} from "../components/Order/Order";
 
 export class Router extends React.Component {
   render (): React.ReactNode {
@@ -14,7 +15,7 @@ export class Router extends React.Component {
         <BrowserRouter>
           <Layout >
             <Switch>
-              {/*<Route exact path='/' component={Main} />*/}
+              <Route exact path='/order' component={Order} />
             </Switch>
           </Layout>
         </BrowserRouter>
