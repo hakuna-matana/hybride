@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": "./src",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "allowUnreachableCode": false,
+    "declaration": false,
+    "alwaysStrict": true,
+    "downlevelIteration": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "noImplicitThis": false,
+    "strictNullChecks": true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "noImplicitAny": false,
+    "lib": ["es2017", "es2018", "dom", "esnext"],
+    "typeRoots" : ["./node_modules/@types","./src/types/*"]
+  },
+  "exclude": ["node_modules", "dist", ".test", ".coverage", "config"]
+}
