@@ -5,6 +5,10 @@ const devServer = {
   port: 3000,
   historyApiFallback: {
     rewrites: [
+      { from: /^\/$/,
+        to: '/landing.html'
+      },
+      { from: /(.*)/, to: '/app.html' },
       {
         from: /^\/(?:.*\/)?(font|img)(\/?[^/]+)$/,
         to: function(context) {

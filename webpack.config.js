@@ -20,11 +20,14 @@ if (overrides) {
 }
 
 const webpackConfig = {
-  entry: "./src/index.tsx",
+  entry: {
+    app: './src/app.tsx',
+    landing: './src/landing.ts'
+  },
   output: {
     path: config.utils_paths.dist(),
     publicPath: config.compiler_public_path,
-    filename: 'index.js',
+    filename: '[name].js',
     pathinfo: false,
   },
   context: path.resolve(__dirname, "./"),
@@ -45,12 +48,19 @@ const webpackConfig = {
   },
   plugins: [
     new HTMLPlugin({
-      filename: 'index.html',
-      template: './src/index.html',
-      favicon: 'src/static/favicon.ico'
+      filename: 'app.html',
+      template: './src/app.html',
+      favicon: 'src/static/favicon.ico',
+      chunks: ['app']
+    }),
+    new HTMLPlugin({
+      filename: 'landing.html',
+      template: './src/landing.html',
+      favicon: 'src/static/favicon.ico',
+      chunks: ['landing']
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].css',
     }),
     new CopyWebpackPlugin([
       { from: './src/static'}

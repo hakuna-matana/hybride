@@ -1,10 +1,6 @@
-import * as React from 'react'
-import './styles/global.style.scss'
-import './styles/core.scss'
-import { Router } from './containers/Router'
+import '@babel/polyfill'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Main } from './Main'
 
-export class App extends React.Component {
-  render () {
-    return <Router />
-  }
-}
+ReactDOM.render(<Main />, document.getElementById('root'))

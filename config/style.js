@@ -17,7 +17,7 @@ const sassResourcesLoader = {
 }
 
 const noCssModulesRules = {
-  test: /(core|global\.style)\.(scss|sass)$/,
+  test: /(landing|core|global\.style)\.(scss|sass)$/,
   use: [
     MiniCssExtractPlugin.loader,
     'css-loader',
@@ -29,7 +29,7 @@ const noCssModulesRules = {
 
 const cssModulesRules = {
   test: /\.s[ac]ss$/,
-  exclude: [/core\.(scss|sass)$/, /global\.style\.(scss|sass)$/],
+  exclude: [/landing|core\.(scss|sass)$/, /global\.style\.(scss|sass)$/],
   use: [
     MiniCssExtractPlugin.loader,
     {
