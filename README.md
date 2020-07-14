@@ -1,6 +1,6 @@
 ## Webpack config for hybrid site (React app and landing page)
 
-##### This config is for those sites whose main page is a static landing page, 
+This config is for those sites whose main page is a static landing page, 
 and the rest of the pages are a React application (single page application).
 
 ### Technology stack
