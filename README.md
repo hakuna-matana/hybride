@@ -1,21 +1,26 @@
-## Webpack config for hybrid site 
-##### (React app and landing page)
+## Webpack config for hybrid site (React app and landing page)
 
-This config is for those sites whose main page is a static landing page, 
+##### This config is for those sites whose main page is a static landing page, 
 and the rest of the pages are a React application (single page application).
 
-#### Technology stack
-For landing page: 
+### Technology stack
+#### For landing page: 
 - es6 modules
 - scss
 
-For spa:
+#### For spa:
 - React
 - Typescript
 - Scss modules
 
-Other things the webpack config does:
+#### Other things the webpack config does:
 - starts the dev server
 - include scss global variables and mixin
 - add fonts/jpg/png/svg
 - add favicon.ico
+
+<hr />
+
+- `yarn install` - install dependencies
+- `yarn start` - start dev server
+- `yarn build` - build for production
