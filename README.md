@@ -5,6 +5,7 @@ and the rest of the pages are a React application (single page application).
 
 ### Technology stack
 #### For landing page: 
+- html
 - es6 modules
 - scss
 
